@@ -14,6 +14,38 @@
   src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Exo2";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Exo2/Exo2.0-Regular.eot");
+  src: url("../fonts/Exo2/Exo2.0-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2/Exo2.0-Regular.woff") format("woff"), url("../fonts/Exo2/Exo2.0-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Exo2/Exo2.0-Bold.eot");
+  src: url("../fonts/Exo2/Exo2.0-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2/Exo2.0-Bold.woff") format("woff"), url("../fonts/Exo2/Exo2.0-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Exo2/Exo2.0-Light.eot");
+  src: url("../fonts/Exo2/Exo2.0-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2/Exo2.0-Light.woff") format("woff"), url("../fonts/Exo2/Exo2.0-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-semibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Exo2/Exo2.0-SemiBold.eot");
+  src: url("../fonts/Exo2/Exo2.0-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2/Exo2.0-SemiBold.woff") format("woff"), url("../fonts/Exo2/Exo2.0-SemiBold.ttf") format("truetype");
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -541,7 +573,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 1170px;
     max-width: 100%;
   }
 }
@@ -1824,6 +1856,161 @@ html {
 }
 
 /*==========  user style  ==========*/
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Exo2", sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  background: #ffffff;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .main-menu {
+  display: flex;
+  align-items: center;
+}
+
+header .main-menu ul {
+  margin-left: auto;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+header .main-menu ul li {
+  float: left;
+}
+
+header .main-menu ul li a {
+  color: #000;
+  margin-left: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s;
+}
+
+header .main-menu ul li a:hover {
+  text-decoration: none;
+  color: #ffcc2a;
+}
+
+.header-bg {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.header-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.header-bg .container {
+  height: 100%;
+}
+
+.header-title {
+  z-index: 3;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-title h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 16px;
+}
+
+.header-title h1 {
+  font-size: 63px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.header-title h1 span {
+  color: #3e4095;
+  font-size: 100px;
+}
+
+.header-title h1 span:first-child {
+  color: #00a85a;
+  font-size: 105px;
+  display: block;
+}
+
+.header-title h1 span:last-child {
+  color: #ffcc2a;
+}
+
+form {
+  width: 100%;
+}
+
+form span {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-weight: bold;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  border: 0;
+  margin-top: 20px;
+  height: 50px;
+  padding: 10px 15px;
+}
+
+form input[type="submit"] {
+  background: #00a85a;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+  transition: .2s;
+  position: relative;
+  box-shadow: 0 3px 0 0 #00753f;
+}
+
+form input[type="submit"]:hover {
+  background: #008f4c;
+  cursor: pointer;
+  transform: translateY(3px);
+  box-shadow: 0 0 0 0 #00753f;
+}
+
 /*==========  user style  ==========*/
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
