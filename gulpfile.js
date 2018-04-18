@@ -61,7 +61,8 @@ gulp.task('sass', function(){
 
 gulp.task('js', function() {
 	return gulp.src([
-			'src/libs/jquery/dist/jquery.min.js',
+			'src/libs/jquery/jquery-1.9.1.min.js',
+			'src/libs/magnificpopup/jquery.magnific-popup.min.js',
 			'src/js/common.js', // Always at the end
 			])
 		.pipe(concat('scripts.min.js'))
