@@ -38,10 +38,10 @@
 					<h1><span>cordao</span> <span>de</span> <span>ouro</span></h1>
 				</div>
 				<div class="col-4">
-					<form action="">
+					<form action="send.php" method="POST">
 						<span>Записаться на занятие</span>
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Вашь номер">
+						<input type="text" name="name" placeholder="Ваше имя" required>
+						<input type="text" name="phone" placeholder="Вашь номер" required>
 						<input type="submit" value="Записаться">
 					</form>
 				</div>
