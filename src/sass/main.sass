@@ -13,21 +13,51 @@ body
 
 section
 	padding: 100px 0
+	+media-breakpoint-down(lg)
+		padding: 70px 0
+	+media-breakpoint-down(sm)
+		padding: 50px 0
+	
 
 header
 	padding: 20px 0
 	background: #ffffff
 	.logo img
 		width: 100%
+		+media-breakpoint-down(sm)
+			width: 30%
+			margin: 0 auto
+			display: block
+	#pull
+		+media-breakpoint-down(sm)
+			display: block
+			width: 100%
+			text-align: center
+			font-size: 30px
+			color: #333
+			font-weight: bold
+			text-decoration: none
+			margin-top: 20px
 	.main-menu
 		display: flex
 		align-items: center
+		+media-breakpoint-down(sm)
+			display: block
 		ul
 			margin-left: auto
 			margin-bottom: 0
 			list-style: none
+			+media-breakpoint-down(sm)
+				display: none
+				margin: 0
+				padding: 0
 			li
 				float: left
+				+media-breakpoint-down(sm)
+					display: block
+					width: 100%
+					text-align: center
+					margin-top: 20px
 				a
 					color: #000
 					margin-left: 30px
@@ -38,12 +68,18 @@ header
 					&:hover
 						text-decoration: none
 						color: $color-1
+					+media-breakpoint-down(sm)
+						margin-left: 0
 
 .header-bg
 	height: 80vh
 	width: 100%
 	position: relative
 	overflow: hidden
+	+media-breakpoint-down(lg)
+		height: 70vh
+	+media-breakpoint-down(sm)
+		height: 100%
 	video
 		position: absolute
 		top: 0
@@ -73,19 +109,35 @@ header
 		text-transform: uppercase
 		font-weight: 500
 		letter-spacing: 16px
+		+media-breakpoint-down(lg)
+			font-size: 24px
+		+media-breakpoint-down(sm)
+			font-size: 18px
+			letter-spacing: 10px
+			text-align: center
 	h1
-		font-size: 63px
 		letter-spacing: 3px
 		text-transform: uppercase
+		+media-breakpoint-down(sm)
+			text-align: center
 		span
 			color: $color-3
 			font-size: 100px
 			&:first-child()
 				color: $color-2
-				font-size: 105px
+				font-size: 102px
 				display: block
+				+media-breakpoint-down(lg)
+					font-size: 92px
+				+media-breakpoint-down(sm)
+					font-size: 62px	
 			&:last-child()
 				color: $color-1
+			+media-breakpoint-down(lg)
+				font-size: 90px
+			+media-breakpoint-down(sm)
+				font-size: 60px
+
 
 form
 	width: 100%
@@ -97,6 +149,9 @@ form
 		width: 100%
 		display: block
 		font-weight: bold
+		+media-breakpoint-down(sm)
+			font-size: 18px
+			margin-top: 20px
 	input
 		display: block
 		width: 100%
@@ -105,6 +160,10 @@ form
 		margin-top: 20px
 		height: 50px
 		padding: 10px 15px
+		+media-breakpoint-down(sm)
+			height: 40px
+			width: 80%
+			margin: 20px auto
 	input[type="submit"]
 		background: $color-2
 		color: #fff
@@ -113,12 +172,19 @@ form
 		font-size: 20px
 		transition: .2s
 		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-top: 0
+		padding-bottom: 0
 		box-shadow: 0 3px 0 0 darken($color-2, 10%)
 		&:hover
 			background: darken($color-2, 5%)
 			cursor: pointer
 			transform: translateY(3px)
 			box-shadow: 0 0 0 0 darken($color-2, 10%)
+		+media-breakpoint-down(sm)
+			font-size: 18px
 
 .section-title
 	text-transform: uppercase
@@ -133,22 +199,35 @@ form
 	&::after
 		content: attr(data-parent)
 		position: absolute
+		width: 100%
 		left: 50%
 		transform: translateX(-50%)
 		z-index: -1
 		bottom: 0
 		color: #ebebeb
 		font-size: 60px
+	+media-breakpoint-down(lg)
+		font-size: 35px
+		&::after
+			font-size: 50px
+	+media-breakpoint-down(sm)
+		font-size: 30px
+		&::after
+			display: none
 
 .capuero-description
 	font-size: 18px
 	text-align: center
-	margin-bottom: 200px
+	+media-breakpoint-down(sm)
+		font-size: 16px
+		padding: 0 20px
 
 .capuero-items
 	justify-content: space-around
 	text-align: center
 	margin-top: 50px
+	+media-breakpoint-down(sm)
+		padding: 0 20px
 	.capuero-item
 		text-align: center
 		margin-bottom: 30px
@@ -157,14 +236,26 @@ form
 			height: 200px
 			margin: 0 auto
 			overflow: hidden
+			+media-breakpoint-down(lg)
+				width: 150px
+				height: 150px
+				img
+					width: 100%
+			+media-breakpoint-down(sm)
+				width: 120px
+				height: 120px
 		.title
 			font-size: 24px
 			font-weight: bold
 			text-transform: uppercase
 			margin: 30px 0 10px
+			+media-breakpoint-down(sm)
+				font-size: 20px
 
 .trainer, .modal-trainer
 	margin-top: 70px
+	+media-breakpoint-down(sm)
+		margin-top: 20px
 	.media
 		width: 330px
 		height: 330px
@@ -176,6 +267,9 @@ form
 		align-items: center
 		img
 			width: 100%
+		+media-breakpoint-down(lg)
+		width: 250px
+		height: 250px
 	.name
 		font-size: 28px
 		font-weight: bold
@@ -189,13 +283,18 @@ form
 			background: $color-1
 			height: 2px
 			width: 100px
-			margin: 5px auto	
+			margin: 5px auto
+		+media-breakpoint-down(lg)
+			font-size: 24px
 .modal-trainer
 	margin-top: 0
 	top: -80px
 	left: -80px
 	float: left
 	margin-right: 25px
+	+media-breakpoint-down(sm)
+		width: 100%
+		margin-bottom: 20px
 	.media
 		width: 200px
 		height: 200px
@@ -221,6 +320,11 @@ form
 		padding: 20px
 		background: rgba($color-3, .8)
 		border-radius: 3px
+		+media-breakpoint-down(lg)
+			font-size: 16px
+		+media-breakpoint-down(sm)
+			margin-top: 30px
+			font-size: 14px
 	.btn-read-more
 		background: $color-1
 		padding: 15px 20px
@@ -251,6 +355,8 @@ table
 		vertical-align: top
 		&:last-child
 			border: none
+		+media-breakpoint-down(lg)
+			padding: 40px 10px
 	span.time
 		color: darken($color-1, 10%)
 		font-weight: bold
@@ -259,6 +365,8 @@ table
 		margin-top: 20px
 		&:first-child
 			margin-top: 0
+		+media-breakpoint-down(lg)
+			font-size: 17px
 
 .gallary
 	position: relative
@@ -281,6 +389,8 @@ table
 			color: #fff
 			font-weight: bold
 			font-size: 20px
+			+media-breakpoint-down(sm)
+				font-size: 16px
 .popup-gallery
 	display: flex
 	flex-wrap: wrap
@@ -306,6 +416,10 @@ table
 		img
 			transition: .2s
 			height: 100%
+		+media-breakpoint-down(lg)
+			height: 250px
+		+media-breakpoint-down(sm)
+			width: 100%
 
 .contacts
 	font-size: 26px
@@ -317,6 +431,10 @@ table
 		margin-bottom: 10px
 		margin-top: 30px
 		color: $color-3
+	+media-breakpoint-down(sm)
+		font-size: 22px
+		i
+			font-size: 30px
 	
 .social
 	i
@@ -325,8 +443,7 @@ table
 			color: $color-1
 
 footer
-	margin-top: -100px
-	padding-top: 50px
+	margin-top: -70px
 	padding-bottom: 50px
 	background: #333
 	color: #fff
@@ -338,6 +455,7 @@ footer
 		text-transform: uppercase
 		margin-bottom: 50px
 		position: relative
+		padding-top: 50px
 		&::after
 			content: ""
 			display: block
@@ -371,6 +489,10 @@ footer
 	padding: 30px 50px
 	position: relative
 	border-radius: 3px
+	+media-breakpoint-down(sm)
+		width: 100%
+		margin: 0
+		padding: 20px
 	a.close
 		position: absolute
 		right: 15px

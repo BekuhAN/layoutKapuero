@@ -10,6 +10,7 @@ $(document).ready(function() {
 			preload: [0,1]
 		}
 	});
+
 	$(function () {
 		$('.popup-modal').magnificPopup({
 			type: 'inline',
@@ -22,4 +23,22 @@ $(document).ready(function() {
 			$.magnificPopup.close();
 		});
 	});
+
+	$(function() {
+		var pull = $('#pull');
+			menu = $('.main-menu > ul');
+			menuHeight  = menu.height();
+	
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+	});
+
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	}); 
 });

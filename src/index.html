@@ -14,8 +14,9 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-1 logo"><a href="index.html"><img src="img/logo.jpg"></a></div>
-				<div class="col-11 main-menu">
+				<div class="col-md-1 col-12 logo"><a href="index.html"><img src="img/logo.jpg"></a></div>
+				<div class="col-md-11 col-12 main-menu">
+					<a href="#" class="d-md-none" id="pull">Меню <i class="fa fa-bars"></i></a>
 					<ul>
 						<li><a href="#">Капоэйра</a></li>
 						<li><a href="#">Тренер</a></li>
@@ -33,11 +34,11 @@
 		</video>
 		<div class="container">
 			<div class="row header-title">
-				<div class="col-7">
+				<div class="col-md-7 col-12">
 					<h2>Школа Капоэйра</h2>
 					<h1><span>cordao</span> <span>de</span> <span>ouro</span></h1>
 				</div>
-				<div class="col-4">
+				<div class="col-md-4 col-12">
 					<form action="send.php" method="POST">
 						<span>Записаться на занятие</span>
 						<input type="text" name="name" placeholder="Ваше имя" required>
@@ -61,31 +62,36 @@
 
 					<p>ИСПЫТАЙ СЕБЯ... попробуй КАПОЭЙРУ!</p>
 				</div>
+			</div>
+		</div>
+	</section>
 
-				<div class="section-title" data-parent="Капоэйра это...">Капоэйра это...</div>
+	<section class="capuero-items-s">
 
-				<div class="capuero-items row">
-					<div class="capuero-item col-4">
-						<div class="media"><img src="img/capoeira-part-1.jpg" alt=""></div>
-						<div class="title">боевое исскуство</div>
-						<div class="description">На каждом занятии отрабатывают боевые движения, удары и уходы, что позволяет развить координацию, ловкость и навыки самозащиты</div>
-					</div>
-					<div class="capuero-item col-4">
-						<div class="media"><img src="img/capoeira-part-2.jpg" alt=""></div>
-						<div class="title">игра</div>
-						<div class="description"> Бразильцы называют капоэйру: «jogo» — «игра». Это взаимодействие двух партнёров. Обхитрить, провести свою стратегию, настоять или уступить,  только без слов, а в движении.</div>
-					</div>
-					<div class="w-100"></div>
-					<div class="capuero-item col-4">
-						<div class="media"><img src="img/capoeira-part-3.jpg" alt=""></div>
-						<div class="title">музыка</div>
-						<div class="description">Афро-бразильские музыкальные инструменты, традиционные песни, хлопки в ладоши, радостные эмоции людей - все это создает неповторимую атмосферу для игры капоэйристов.</div>
-					</div>
-					<div class="capuero-item col-4">
-						<div class="media"><img src="img/capoeira-part-4.jpg" alt=""></div>
-						<div class="title">акробатика</div>
-						<div class="description">Изучение сложных элементов всегда начинается с доступных упражнений, что позволяет добиться впечатляющих результатов за короткий период времени</div>
-					</div>
+		<div class="section-title" data-parent="Капоэйра это...">Капоэйра это...</div>
+
+		<div class="container">
+			<div class="capuero-items row">
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-1.jpg" alt=""></div>
+					<div class="title">боевое исскуство</div>
+					<div class="description">На каждом занятии отрабатывают боевые движения, удары и уходы, что позволяет развить координацию, ловкость и навыки самозащиты</div>
+				</div>
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-2.jpg" alt=""></div>
+					<div class="title">игра</div>
+					<div class="description"> Бразильцы называют капоэйру: «jogo» — «игра». Это взаимодействие двух партнёров. Обхитрить, провести свою стратегию, настоять или уступить,  только без слов, а в движении.</div>
+				</div>
+				<div class="w-100"></div>
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-3.jpg" alt=""></div>
+					<div class="title">музыка</div>
+					<div class="description">Афро-бразильские музыкальные инструменты, традиционные песни, хлопки в ладоши, радостные эмоции людей - все это создает неповторимую атмосферу для игры капоэйристов.</div>
+				</div>
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-4.jpg" alt=""></div>
+					<div class="title">акробатика</div>
+					<div class="description">Изучение сложных элементов всегда начинается с доступных упражнений, что позволяет добиться впечатляющих результатов за короткий период времени</div>
 				</div>
 			</div>
 		</div>
@@ -95,11 +101,11 @@
 		<div class="section-title" data-parent="Ведущий тренер">Ведущий тренер</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-4 trainer">
+				<div class="col-md-4 trainer">
 					<div class="media"><img src="img/trainer.jpg"></div>
 					<div class="name">Екатерина <hr> Casper</div>
 				</div>
-				<div class="col-8 trainer-history">
+				<div class="col-md-8 trainer-history">
 					<div>
 						«	В ноябре 2003 года впервые попала на занятия по Капоэйре, которые стали ее любимым делом жизни. Первые года тренировалась со своим первым учителем Сергеем Osado, рассматривая потрясающие записи из Бразилии на видеокассетах, пытаясь повторять движения. Благодаря зажигательному подходу и интересной подаче тренировок у Сергея, быстро увлеклась и захотела начать путешествовать в другие города, где капоэйра становилась все более популярнее. Первая поездка в Москву в 14 лет, на трехдневный фестиваль группы капоэйра Инби, произвел неизгладимое впечатление.	
 					</div>
@@ -171,25 +177,25 @@
 				<a href="img/gallary-1.jpg" class="gallary-item">
 					<img src="img/gallary-1.jpg" alt="">
 				</a>
-				<a href="img/gallary-2.jpg" class="gallary-item">
+				<a href="img/gallary-2.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-2.jpg" alt="">
 				</a>
-				<a href="img/gallary-3.jpg" class="gallary-item">
+				<a href="img/gallary-3.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-3.jpg" alt="">
 				</a>
-				<a href="img/gallary-4.jpg" class="gallary-item">
+				<a href="img/gallary-4.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-4.jpg" alt="">
 				</a>
-				<a href="img/gallary-5.jpg" class="gallary-item">
+				<a href="img/gallary-5.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-5.jpg" alt="">
 				</a>
-				<a href="img/gallary-6.jpg" class="gallary-item">
+				<a href="img/gallary-6.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-6.jpg" alt="">
 				</a>
-				<a href="img/gallary-7.jpg" class="gallary-item">
+				<a href="img/gallary-7.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-7.jpg" alt="">
 				</a>
-				<a href="img/gallary-8.jpg" class="gallary-item">
+				<a href="img/gallary-8.jpg" class="gallary-item d-none d-sm-block">
 					<img src="img/gallary-8.jpg" alt="">
 				</a>
 			</div>
@@ -212,12 +218,12 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-md-3">
 					<div class="footer-title">Контакты</div>
 					<div class="phone"><i class="fa fa-phone"></i> 8 (964) 925-66-39 (Casper)</div>
 					<div class="local"><i class="fa fa-map-marker"></i> г. Краснодар, ул. Северная, 320, 3 этаж, зал 342</div>
 				</div>
-				<div class="col-3">
+				<div class="col-md-3">
 					<div class="footer-title">Карта сайта</div>
 					<ul>
 						<li><a href="#">Капоэйра</a></li>
@@ -227,7 +233,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-3">
+				<div class="col-md-3">
 					<div class="footer-title">Соц. сети</div>
 					<div class="social">
 						<a href="https://vk.com/capoeira_krasnodar"><i class="fa fa-vk"></i></a>
