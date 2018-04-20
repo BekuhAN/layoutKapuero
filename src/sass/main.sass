@@ -24,6 +24,8 @@ header
 	background: #ffffff
 	.logo img
 		width: 100%
+		+media-breakpoint-down(md)
+			width: 250%
 		+media-breakpoint-down(sm)
 			width: 30%
 			margin: 0 auto
@@ -78,7 +80,7 @@ header
 	overflow: hidden
 	+media-breakpoint-down(lg)
 		height: 70vh
-	+media-breakpoint-down(sm)
+	+media-breakpoint-down(md)
 		height: 100%
 	video
 		position: absolute
@@ -86,6 +88,9 @@ header
 		left: 0
 		width: 100%
 		z-index: -1
+		+media-breakpoint-down(md)
+			height: 100%
+			width: auto
 	&::after
 		content: ""
 		display: block
@@ -111,14 +116,15 @@ header
 		letter-spacing: 16px
 		+media-breakpoint-down(lg)
 			font-size: 24px
+		+media-breakpoint-down(md)
+			text-align: center
 		+media-breakpoint-down(sm)
 			font-size: 18px
 			letter-spacing: 10px
-			text-align: center
 	h1
 		letter-spacing: 3px
 		text-transform: uppercase
-		+media-breakpoint-down(sm)
+		+media-breakpoint-down(md)
 			text-align: center
 		span
 			color: $color-3
@@ -149,6 +155,10 @@ form
 		width: 100%
 		display: block
 		font-weight: bold
+		+media-breakpoint-down(md)
+			font-size: 26px
+			letter-spacing: 3px
+			margin-top: 50px
 		+media-breakpoint-down(sm)
 			font-size: 18px
 			margin-top: 20px
@@ -160,10 +170,12 @@ form
 		margin-top: 20px
 		height: 50px
 		padding: 10px 15px
+		+media-breakpoint-down(md)
+			width: 50%
+			margin: 20px auto
 		+media-breakpoint-down(sm)
 			height: 40px
 			width: 80%
-			margin: 20px auto
 	input[type="submit"]
 		background: $color-2
 		color: #fff
@@ -268,8 +280,11 @@ form
 		img
 			width: 100%
 		+media-breakpoint-down(lg)
-		width: 250px
-		height: 250px
+			width: 250px
+			height: 250px
+		+media-breakpoint-down(md)
+			width: 200px
+			height: 200px
 	.name
 		font-size: 28px
 		font-weight: bold
@@ -339,22 +354,43 @@ form
 			background: lighten($color-1, 10%)
 			cursor: pointer
 
-table
+.table
 	width: 100%
 	margin-top: 70px
-	th
+	margin-bottom: 30px
+	display: flex
+	flex-wrap: wrap
+	.column
 		width: 14.22222222%
+		&:nth-child(odd) .th
+			background: #e5e5e5
+		&:last-child .td
+			border: none
+		+media-breakpoint-down(md)
+			width: 25%
+			&:nth-child(6) .td
+				border: none
+			&:nth-child(3) .th
+				background: #ebebeb
+		+media-breakpoint-down(sm)
+			width: 50%
+			&:nth-child(3n) .td
+				border: none
+			&:nth-child(odd) .th
+				background: #ebebeb
+	.th
 		background: #ebebeb
 		text-align: center
 		height: 70px
-		&:nth-child(odd)
-			background: #e5e5e5
-	td
-		border-right: 1px solid #ebebeb
+		display: flex
+		justify-content: center
+		align-items: center
+		font-weight: bold
+	.td
 		padding: 40px 20px
 		vertical-align: top
-		&:last-child
-			border: none
+		border-right: 1px solid #ebebeb
+		height: 100%
 		+media-breakpoint-down(lg)
 			padding: 40px 10px
 	span.time
@@ -418,8 +454,11 @@ table
 			height: 100%
 		+media-breakpoint-down(lg)
 			height: 250px
+		+media-breakpoint-down(md)
+			height: 200px
 		+media-breakpoint-down(sm)
 			width: 100%
+			height: 250px
 
 .contacts
 	font-size: 26px
@@ -443,10 +482,14 @@ table
 			color: $color-1
 
 footer
-	margin-top: -70px
+	margin-top: -100px
 	padding-bottom: 50px
 	background: #333
 	color: #fff
+	+media-breakpoint-down(lg)
+		margin-top: -70px
+	+media-breakpoint-down(sm)
+		margin-top: -50px
 	.row
 		justify-content: space-between
 	.footer-title	
@@ -502,6 +545,28 @@ footer
 		transition: .2s
 		&:hover
 			color: lighten($color-3, 20%)
+
+section.gallary
+	padding: 0 0 200px
+	margin-top: 0
+	.gallary-item
+		height: 240px
+		margin-top: 15px
+		margin-bottom: 15px
+		img
+			width: 100%
+			height: auto
+		&:hover
+			img
+				transform: none
+		&::after
+			background: none
+		+media-breakpoint-down(lg)
+			height: 170px
+		+media-breakpoint-down(md)
+			height: 200px
+		+media-breakpoint-down(sm)
+			margin-top: 0
 
 /*==========  user style  ==========*/
 
