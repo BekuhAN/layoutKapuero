@@ -20,8 +20,8 @@
   font-family: "FontAwesome";
   font-weight: normal;
   font-style: normal;
-  src: url("../libs/font-awesome/fonts/fontawesome-webfont.eot");
-  src: url("../libs/font-awesome/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../libs/font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("../libs/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype");
 }
 
 @font-face {
@@ -5660,7 +5660,7 @@ header .main-menu ul li a:hover {
 
 @media (max-width: 1199px) {
   .header-bg {
-    height: 70vh;
+    height: 75vh;
   }
 }
 
@@ -5672,13 +5672,14 @@ header .main-menu ul li a:hover {
 
 .header-bg video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   z-index: -1;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .header-bg video {
     height: 100%;
     width: auto;
@@ -6466,6 +6467,19 @@ section.gallary .gallary-item::after {
   section.gallary .gallary-item {
     margin-top: 0;
   }
+}
+
+section.gallary .section-title {
+  margin-top: 50px;
+}
+
+section.gallary video {
+  height: 100%;
+  margin-top: 50px;
+}
+
+section.gallary .popup-gallery {
+  margin-bottom: 100px;
 }
 
 /*==========  user style  ==========*/

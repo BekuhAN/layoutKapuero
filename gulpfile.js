@@ -61,7 +61,7 @@ gulp.task('sass', function(){
 
 gulp.task('js', function() {
 	return gulp.src([
-			'src/libs/jquery/jquery-1.9.1.min.js',
+			'src/libs/jquery/dist/jquery.min.js',
 			'src/libs/magnificpopup/jquery.magnific-popup.min.js',
 			'src/js/common.js', // Always at the end
 			])
@@ -83,7 +83,7 @@ gulp.task('clear', function (callback) {
 	return cache.clearAll();
 })
 
-gulp.task('build', ['clean', 'img', 'sass', 'js'], function() {
+gulp.task('build', ['clean', 'sass', 'js'], function() {
 	var buildCss = gulp.src([ 
 		'src/css/*.css',
 		'src/css/*.min.css'

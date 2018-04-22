@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Капоэйра</title>
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-12 logo"><a href="index.html"><img src="img/logo.jpg"></a></div>
+				<div class="col-md-11 col-12 main-menu">
+					<a href="#" class="d-md-none" id="pull">Меню <i class="fa fa-bars"></i></a>
+					<ul>
+						<li><a href="#bkapuero">Капоэйра</a></li>
+						<li><a href="#btrainer">Тренер</a></li>
+						<li><a href="#bschedule">Расписание</a></li>
+						<li><a href="#bgallary">Галерея</a></li>
+						<li><a href="#bcontacts">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="header-bg">
+		<video loop muted autoplay poster="img/preview.jpg">
+			<source src="video/preview.mp4" type="video/mp4">
+		</video>
+		<div class="container">
+			<div class="row header-title">
+				<div class="col-lg-7 col-12">
+					<h2>Школа Капоэйра</h2>
+					<h1><span>cordao</span> <span>de</span> <span>ouro</span></h1>
+				</div>
+				<div class="col-lg-4 col-12">
+					<form id="main" method="POST" action="">
+						<span>Записаться на занятие</span>
+						<input type="text" id="name" name="name" placeholder="Ваше имя" required>
+						<input type="text" id="phone" name="phone" placeholder="Ваш номер" required>
+						<input id="submit-form" type="button" value="Записаться" onClick="getForm()">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bkapuero">
+		<div class="container">
+			<div class="row">
+				<div class="section-title" data-parent="Капоэйра">Капоэйра</div>
+				<div class="capuero-description">
+					<p>Капоэйра - это уникальное афро-бразильское боевое искусство, сочетающее в себе элементы танца, борьбы, акробатики, под сопровождение традиционной музыки. Это искусство в искусстве. Красота и сила движения, а также знакомство и восприятие культуры Бразилии. В течении многих десятков лет капоэйра развивалась и обогащалась движениями из всевозможных боевых течений.Возникшая в эпоху колонизации Бразилии, на сегодняшний день она завоевала сердца тысячи людей по всему миру!! Ее неповторимость - это сочетание, казалось бы, несочетаемых вещей, а именно борьбы, танца, акробатики, пластики, взаимодействия с партнером, чувство контроля и при этом позитивность настроя. </p>
+
+					<p>Начальный уровень не имеет значения. Физические способности развиваются на тренировках! </p>
+
+					<p>Капоэйра дарит мужчинам силу и выносливость женщинам - гибкость и стройность детям - ловкость и здоровье </p>
+
+					<p>ИСПЫТАЙ СЕБЯ... попробуй КАПОЭЙРУ!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="capuero-items-s">
+
+		<div class="section-title" data-parent="Капоэйра это...">Капоэйра это...</div>
+
+		<div class="container">
+			<div class="capuero-items row">
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-1.jpg" alt=""></div>
+					<div class="title">боевое исскуство</div>
+					<div class="description">На каждом занятии отрабатывают боевые движения, удары и уходы, что позволяет развить координацию, ловкость и навыки самозащиты</div>
+				</div>
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-2.jpg" alt=""></div>
+					<div class="title">игра</div>
+					<div class="description"> Бразильцы называют капоэйру: «jogo» — «игра». Это взаимодействие двух партнёров. Обхитрить, провести свою стратегию, настоять или уступить,  только без слов, а в движении.</div>
+				</div>
+				<div class="w-100"></div>
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-3.jpg" alt=""></div>
+					<div class="title">музыка</div>
+					<div class="description">Афро-бразильские музыкальные инструменты, традиционные песни, хлопки в ладоши, радостные эмоции людей - все это создает неповторимую атмосферу для игры капоэйристов.</div>
+				</div>
+				<div class="capuero-item col-md-4">
+					<div class="media"><img src="img/capoeira-part-4.jpg" alt=""></div>
+					<div class="title">акробатика</div>
+					<div class="description">Изучение сложных элементов всегда начинается с доступных упражнений, что позволяет добиться впечатляющих результатов за короткий период времени</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="btrainer" class="trainer-s">
+		<div class="section-title" data-parent="Ведущий тренер">Ведущий тренер</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 trainer">
+					<div class="media"><img src="img/trainer.jpg"></div>
+					<div class="name">Екатерина <hr> Casper</div>
+				</div>
+				<div class="col-md-8 trainer-history">
+					<div>
+						«	В ноябре 2003 года впервые попала на занятия по Капоэйре, которые стали ее любимым делом жизни. Первые года тренировалась со своим первым учителем Сергеем Osado, рассматривая потрясающие записи из Бразилии на видеокассетах, пытаясь повторять движения. Благодаря зажигательному подходу и интересной подаче тренировок у Сергея, быстро увлеклась и захотела начать путешествовать в другие города, где капоэйра становилась все более популярнее. Первая поездка в Москву в 14 лет, на трехдневный фестиваль группы капоэйра Инби, произвел неизгладимое впечатление.	
+					</div>
+				<a class="popup-modal" href="#modal"><span class="btn-read-more">Подробнее</span></a>
+
+				<div id="modal" class="white-popup-block mfp-hide">
+					<div class="modal-trainer">
+						<div class="media"><img src="img/trainer.jpg">
+						<div class="name">Екатерина<br>Casper</div></div>
+						
+					</div>
+					<p>«	В ноябре 2003 года впервые попала на занятия по Капоэйре, которые стали ее любимым делом жизни. Первые года тренировалась со своим первым учителем Сергеем Osado, рассматривая потрясающие записи из Бразилии на видеокассетах, пытаясь повторять движения. Благодаря зажигательному подходу и интересной подаче тренировок у Сергея, быстро увлеклась и захотела начать путешествовать в другие города, где капоэйра становилась все более популярнее. Первая поездка в Москву в 14 лет, на трехдневный фестиваль группы капоэйра Инби, произвел неизгладимое впечатление. Там Екатерина и получила свой первый зеленый пояс , посвящение в капуэйристы. В 2006 году в силу смены основного мастера Вагнера, повторно получала зеленый пояс по новому направлению, школы Mestre Bamba, которая практиковала в основном более жесткий стиль Режиональ. В 18 лет начала преподавать в г. Краснодаре у КубГУ, где развивала капуэйру для всех желающих бесплатно. И уже через полгода, вместе со своими двумя ученицами поехала в Москву, где получила следующий желто-зеленый пояс. А ученицы прошли посвящение. Спустя полгода приняла участие в семинаре с израильским Cm Cueca, практикующий другой стиль игры капоэйры по школе Cordao de Ouro. Была очарована изяществом, гибкостью и разнообразием движений этого стиля и после долгих раздумий и тренировок (оставив при этом инструкторский образ жизни, занималась только саморазвитием) летом в 2009 году вновь поменяла направление своего стиля в сторону группы Cordao de Ouro . Много путешествовала, не теряла возможности приянть участие во многих близ и дальнележащих семинарах, набиралась опыта и общалась с мастерами и вскоре, а именно в сентярбре 2010 года открыла свою групп Cordao de Ouro Krasnodar, которую развивает до сих пор. »</p>
+					<a class="popup-modal-dismiss close" href="#"><i class="fa fa-times"></i></a>
+				</div>
+				<!--  -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="bschedule">
+
+		<div class="section-title" data-parent="Расписание">Расписание</div>
+		<div class="container">
+			<div class="table">
+				<div class="column">
+					<div class="th">ПН</div>
+					<div class="td">
+						<span class="time">18:00 - 19:00</span> Детская группа 7-13 лет
+						<span class="time">19:00 - 19:45</span> Малыши 4-6 лет
+						<span class="time">20:00 - 21:00</span> Взрослые (новички)
+						<span class="time">21:00 - 22:30</span> Продолжающие
+					</div>
+				</div>
+				<div class="column d-none d-lg-block">
+					<div class="th">ВТ</div>
+					<div class="td"></div>
+				</div>
+				<div class="column">
+					<div class="th">СР</div>
+					<div class="td">
+						<span class="time">18:00 - 19:00</span> Детская группа 7-13 лет
+						<span class="time">19:00 - 19:45</span> Малыши 4-6 лет
+						<span class="time">20:00 - 21:00</span> Взрослые (новички)
+						<span class="time">21:00 - 22:30</span> Продолжающие
+					</div>
+					</div>
+				<div class="column d-none d-lg-block">
+					<div class="th">ЧТ</div>
+					<div class="td"></div>
+					</div>
+				<div class="column">
+					<div class="th">ПТ</div>
+					<div class="td">
+						<span class="time">20:00 - 21:30</span> Взрослые (вместе)
+					</div>
+					</div>
+				<div class="column">
+					<div class="th">СБ</div>
+					<div class="td">
+						<span class="time">14:00 - 14:45</span> Малыши 4-6 лет 
+						<span class="time">15:00 - 16:30</span> Детская группа 7-13 лет 
+						<span class="time">16:30 - 18:00</span> Взрослые от 14 лет и старше
+					</div>
+					</div>
+				<div class="column d-none d-lg-block">
+					<div class="th">ВС</div>
+					<div class="td"></div>
+					</div>
+			</div>
+		</div>
+	
+	</section>
+
+	<section id="bgallary">
+
+		<div class="section-title" data-parent="Галерея">Галерея</div>
+		<div class="gallary">
+			<div class="popup-gallery">
+				<a href="img/gallary-1.jpg" class="gallary-item">
+					<img src="img/gallary-1.jpg" alt="">
+				</a>
+				<a href="img/gallary-2.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-2.jpg" alt="">
+				</a>
+				<a href="img/gallary-3.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-3.jpg" alt="">
+				</a>
+				<a href="img/gallary-4.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-4.jpg" alt="">
+				</a>
+				<a href="img/gallary-5.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-5.jpg" alt="">
+				</a>
+				<a href="img/gallary-6.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-6.jpg" alt="">
+				</a>
+				<a href="img/gallary-7.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-7.jpg" alt="">
+				</a>
+				<a href="img/gallary-8.jpg" class="gallary-item d-none d-sm-block">
+					<img src="img/gallary-8.jpg" alt="">
+				</a>
+			</div>
+			<span class="btn"><a href="gallary.html">Смотреть все...</a></span>
+		</div>
+
+
+	</section>
+
+	<section id="bcontacts">
+		<div class="section-title" data-parent="Контакты">Контакты</div>
+		<div class="container contacts">
+			<div class="phone"><i class="fa fa-phone"></i><br> 8 (964) 925-66-39 (Casper)</div>
+			<div class="local"><i class="fa fa-map-marker"></i><br> г. Краснодар, ул. Северная, 320, 3 этаж, зал 342</div>
+			<div class="social">
+				<a href="https://vk.com/capoeira_krasnodar"><i class="fa fa-vk"></i></a>
+			</div>
+		</div>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A796749b952b64eb806058f1902e7d18d6406f417037ef360bb4650c48a02f923&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer-title">Контакты</div>
+					<div class="phone"><i class="fa fa-phone"></i> 8 (964) 925-66-39 (Casper)</div>
+					<div class="local"><i class="fa fa-map-marker"></i> г. Краснодар, ул. Северная, 320, 3 этаж, зал 342</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-title">Карта сайта</div>
+					<ul>
+						<li><a href="#bkapuero">Капоэйра</a></li>
+						<li><a href="#btrainer">Тренер</a></li>
+						<li><a href="#bschedule">Расписание</a></li>
+						<li><a href="#bgallary">Галерея</a></li>
+						<li><a href="#bcontacts">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<div class="footer-title">Соц. сети</div>
+					<div class="social">
+						<a href="https://vk.com/capoeira_krasnodar"><i class="fa fa-vk"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>   
+
+<!-- Маска телефона -->
+<script>
+	window.addEventListener("DOMContentLoaded", function() {
+	function setCursorPosition(pos, elem) {
+			elem.focus();
+			if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+			else if (elem.createTextRange) {
+					var range = elem.createTextRange();
+					range.collapse(true);
+					range.moveEnd("character", pos);
+					range.moveStart("character", pos);
+					range.select()
+			}
+	}
+
+	function mask(event) {
+			var matrix = "+7 (___) ___ __ __",
+					i = 0,
+					def = matrix.replace(/\D/g, ""),
+					val = this.value.replace(/\D/g, "");
+			if (def.length >= val.length) val = def;
+			this.value = matrix.replace(/./g, function(a) {
+					return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+			});
+			if (event.type == "blur") {
+					if (this.value.length == 2) this.value = ""
+			} else setCursorPosition(this.value.length, this)
+	};
+			var input = document.querySelector("#phone");
+			input.addEventListener("input", mask, false);
+			input.addEventListener("focus", mask, false);
+			input.addEventListener("blur", mask, false);
+	});
+</script>
+
+<script src="js/scripts.min.js"></script>
+	
+<script>
+
+	function getForm(){
+	  	var name = $('#name').val();
+    	var phone = $('#phone').val();
+	  $.ajax({
+	    type: "POST",
+	    url: 'send.php',
+	    data: {name:name, phone:phone},
+	    success: function(){
+	      alert('Заявка отправлена');
+	    },
+	    error: function(e){
+	    	alert('Что то пощло не так');
+	    }
+	  });
+	  
+	  $(':input','#main') 
+		.not(':button, :submit, :reset, :hidden') 
+		.val('') 
+		.removeAttr('checked') 
+		.removeAttr('selected'); 
+	};
+</script>
+
+</body>
+
+</html>
